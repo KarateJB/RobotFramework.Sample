@@ -1,6 +1,6 @@
 *** Settings ***
 Force Tags    auth_smoke_test
-Resource      %{RESOURCE_DIR}/%{TEST_ENV}/env_settings.robot
+Resource      %{ENV_DIR}/%{TEST_ENV}/env_settings.robot
 Resource      keywords/C01_service_up.robot
 
 *** Test Cases ***
