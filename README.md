@@ -3,14 +3,16 @@
 ### (Optional) Create a virtual environment
 
 ```s
-$ python -m venv venv/MyTest
-$ source venv/MyTest/Scripts/activate
+$ python -m venv venv/demo
+$ source venv/demo/Scripts/activate
 ```
 
 
-
-
 ### Install requirements
+
+```s
+$ pip install -r requirements.txt
+```
 
 
 
