@@ -1,5 +1,6 @@
 *** Settings ***
-Force Tags    auth_smoke_test
+Force Tags    auth    discovery
+Default Tags  smoke
 Resource      %{ENV_DIR}/%{TEST_ENV}/env_settings.robot
 Resource      keywords/send_request.robot
 

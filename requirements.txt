@@ -5,3 +5,4 @@ requests==2.23.0
 robotframework==3.2.1
 robotframework-requests==0.7.0
 urllib3==1.25.9
+robotframework-seleniumlibrary==4.2.0
