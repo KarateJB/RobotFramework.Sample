@@ -2,6 +2,7 @@
 Library  SeleniumLibrary
 Force Tags    backend
 Resource      %{ENV_DIR}/%{TEST_ENV}/env_settings.robot
+Resource      resources/vars.resource
 
 *** Variables ***
 ${BROWSER}   chrome
@@ -11,11 +12,11 @@ ${SELSPEED}  0.0s
 Sign in by OIDC
     # Create Webdriver    Chrome    executable_path='C:/Program Files (x86)/Google/Chrome/chromedriver.exe'
     # driver = webdriver.Chrome(executable_path='C:/Program Files (x86)/Google/Chrome/chromedriver.exe')
-    [Setup]  Run Keywords  Open Browser  https://172.18.128.1:5001/OpenId/Login  ${BROWSER}  options=add_argument("--ignore-certificate-errors")  
+    [Setup]  Run Keywords  Open Browser  https://${BACKEND_HOST}:${BACKEND_PORT}/OpenId/Login  ${BROWSER}  options=add_argument("--ignore-certificate-errors")  
     ...              AND   Set Selenium Speed  ${SELSPEED}
-    # open    https://172.18.128.1:5001/OpenId/Login
-    type    id=Username    jblin
-    type    id=Password    1qaz2wsx!
+    # open    https://${BACKEND_HOST}:{BACKEND_PORT}:5001/OpenId/Login
+    type    id=Username    ${LOGIN_ID}
+    type    id=Password    ${LOGIN_PWD}
     click    name=button
     click    name=button
     [Teardown]  Close Browser

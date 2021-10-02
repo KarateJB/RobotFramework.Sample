@@ -19,8 +19,8 @@ $ pip install -r requirements.txt
 For bash user,
 
 ```s
-cd env
-. init_env_vars.sh
+$ cd env
+$ . init_env_vars.sh
 ```
 
 
