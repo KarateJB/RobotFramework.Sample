@@ -10,6 +10,12 @@
 *.sln
 *.dgml
 
+# Credential Resouce files
+[Cc]redential.resource
+[Cc]redential.robot
+[Cc]redentials.resource
+[Cc]redentials.robot
+
 # Jmeter
 *.jtl
 *.csv
