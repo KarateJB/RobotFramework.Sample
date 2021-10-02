@@ -23,8 +23,19 @@ $ cd env
 $ . init_env_vars.sh
 ```
 
+### 4. Initialize credential resource file
 
-## Robot framework
+The credential resource file is gitignored. Make sure you create one to store the credentials like following.
+
+```s
+$ touch env/local/credentials.robot
+$ echo "*** Variables ***" > credentials.robot
+$ echo "\${COMMON_PWD}    xxxxxx" >> credentials.robot
+```
+
+
+
+## Appendix
 
 ### Common keywords
 
